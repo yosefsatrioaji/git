@@ -1,0 +1,13 @@
+D:\Users\YOSEF\OneDrive - Universitas Diponegoro\Dokumen\YSA\git\Modul 4\Modul4_kel74\obj\Debug\netcoreapp3.1\Modul4_kel74.csprojAssemblyReference.cache
+D:\Users\YOSEF\OneDrive - Universitas Diponegoro\Dokumen\YSA\git\Modul 4\Modul4_kel74\obj\Debug\netcoreapp3.1\Modul4_kel74.csproj.CoreCompileInputs.cache
+D:\Users\YOSEF\OneDrive - Universitas Diponegoro\Dokumen\YSA\git\Modul 4\Modul4_kel74\obj\Debug\netcoreapp3.1\Modul4_kel74.AssemblyInfoInputs.cache
+D:\Users\YOSEF\OneDrive - Universitas Diponegoro\Dokumen\YSA\git\Modul 4\Modul4_kel74\obj\Debug\netcoreapp3.1\Modul4_kel74.AssemblyInfo.cs
+D:\Users\YOSEF\OneDrive - Universitas Diponegoro\Dokumen\YSA\git\Modul 4\Modul4_kel74\bin\Debug\netcoreapp3.1\Modul4_kel74.exe
+D:\Users\YOSEF\OneDrive - Universitas Diponegoro\Dokumen\YSA\git\Modul 4\Modul4_kel74\bin\Debug\netcoreapp3.1\Modul4_kel74.deps.json
+D:\Users\YOSEF\OneDrive - Universitas Diponegoro\Dokumen\YSA\git\Modul 4\Modul4_kel74\bin\Debug\netcoreapp3.1\Modul4_kel74.runtimeconfig.json
+D:\Users\YOSEF\OneDrive - Universitas Diponegoro\Dokumen\YSA\git\Modul 4\Modul4_kel74\bin\Debug\netcoreapp3.1\Modul4_kel74.runtimeconfig.dev.json
+D:\Users\YOSEF\OneDrive - Universitas Diponegoro\Dokumen\YSA\git\Modul 4\Modul4_kel74\bin\Debug\netcoreapp3.1\Modul4_kel74.dll
+D:\Users\YOSEF\OneDrive - Universitas Diponegoro\Dokumen\YSA\git\Modul 4\Modul4_kel74\bin\Debug\netcoreapp3.1\Modul4_kel74.pdb
+D:\Users\YOSEF\OneDrive - Universitas Diponegoro\Dokumen\YSA\git\Modul 4\Modul4_kel74\obj\Debug\netcoreapp3.1\Modul4_kel74.dll
+D:\Users\YOSEF\OneDrive - Universitas Diponegoro\Dokumen\YSA\git\Modul 4\Modul4_kel74\obj\Debug\netcoreapp3.1\Modul4_kel74.pdb
+D:\Users\YOSEF\OneDrive - Universitas Diponegoro\Dokumen\YSA\git\Modul 4\Modul4_kel74\obj\Debug\netcoreapp3.1\Modul4_kel74.genruntimeconfig.cache
