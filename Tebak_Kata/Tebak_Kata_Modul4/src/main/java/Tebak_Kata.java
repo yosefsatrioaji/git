@@ -8,6 +8,7 @@ public class Tebak_Kata {
 		SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
 		System.out.println("Sekarang adalah jam " + sdf.format(cal.getTime()) );
 		String restrart;
+                pendefinisi2 object = new pendefinisi2();
 		do 
 		{
 			String jawaban;
@@ -23,78 +24,16 @@ public class Tebak_Kata {
 			int pilihan = in.nextInt();
 			switch(pilihan) {
 			case 1 :
-			System.out.println("Aku adalah benda bundar yang biasa di jalanan, siapakah aku?");
-			jawaban = in.next();
-			if(jawaban.equalsIgnoreCase("roda")){
-				System.out.println("JAWABAN ANDA BENAR");
-			}
-			else{
-				System.out.println("yah, jawaban anda salah, ingin coba lagi? Y untuk ya");
-				retry = in.next();
-				if (retry.equalsIgnoreCase("y")){
-					System.out.println("Aku adalah benda bundar yang biasa di jalanan, siapakah aku?");
-					jawaban = in.next();
-					if(jawaban.equalsIgnoreCase("roda")){
-						System.out.println("JAWABAN ANDA BENAR");
-					}
-					else{
-						System.out.println("yah, jawaban anda salah, yang benar adalah roda");
-					}
-
-
-				}
-			}
+			object.soal("tes","gajah");
 			break;
 
 			case 2 :
-			System.out.println("Dipasang di bawah tapi di baca ke atas, apakah itu?");
-			jawaban = in.next();
-			if(jawaban.equalsIgnoreCase("Nike")){
-				System.out.println("JAWABAN ANDA BENAR");
-			}
-			else{
-				System.out.println("yah, jawaban anda salah, ingin coba lagi? Y untuk ya");
-				retry = in.next();
-				if (retry.equalsIgnoreCase("y")){
-					System.out.println("Aku adalah benda bundar yang biasa di jalanan, siapakah aku?");
-					jawaban = in.next();
-					if(jawaban.equalsIgnoreCase("Nike")){
-						System.out.println("JAWABAN ANDA BENAR");
-					}
-					else{
-						System.out.println("yah, jawaban anda salah, yang benar adalah Nike");
-					}
-				}
-			}
+			object.soal("tes","roda");
 			break;
 			case 3 :
-			System.out.println("Aku biasanya besar warnanya abu-abu, siapakah aku?");
-			jawaban = in.next();
-			if(jawaban.equalsIgnoreCase("gajah")){
-				System.out.println("JAWABAN ANDA BENAR");
-			}
-			else{
-				System.out.println("yah, jawaban anda salah, ingin coba lagi? Y untuk ya");
-				retry = in.next();
-				if (retry.equalsIgnoreCase("y")){
-					System.out.println("Aku adalah benda bundar yang biasa di jalanan, siapakah aku?");
-					jawaban = in.next();
-					if(jawaban.equalsIgnoreCase("gajah")){
-						System.out.println("JAWABAN ANDA BENAR");
-					}
-					else{
-
-
-
-						System.out.println("yah, jawaban anda salah, yang benar adalah gajah");
-					}
-				}
-			}
+			object.soal("tes", "nike");
 			break;
 			case 4 :
-
-
-
 			System.out.println("Aku laki-laki tapi bisa hamil, siapakah aku?");
 			jawaban = in.next();
 			if(jawaban.equalsIgnoreCase("Kuda laut")){
