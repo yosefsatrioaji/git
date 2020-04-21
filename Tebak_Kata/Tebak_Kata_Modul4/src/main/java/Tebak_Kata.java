@@ -24,14 +24,14 @@ public class Tebak_Kata {
 			int pilihan = in.nextInt();
 			switch(pilihan) {
 			case 1 :
-			object.soal("tes","gajah");
+			object.soal("Aku biasanya besar warnanya abu-abu, siapakah aku?","gajah");
 			break;
 
 			case 2 :
-			object.soal("tes","roda");
+			object.soal("Aku adalah benda bundar yang biasa di jalanan, siapakah aku?","roda");
 			break;
 			case 3 :
-			object.soal("tes", "nike");
+			object.soal("Dipasang di bawah tapi di baca ke atas, apakah itu?", "nike");
 			break;
 			case 4 :
 			System.out.println("Aku laki-laki tapi bisa hamil, siapakah aku?");
@@ -56,7 +56,7 @@ public class Tebak_Kata {
 			break;
 			case 5 :
 			System.out.println("Made by Kelompok 74 Shift 2");
-			System.out.println("Rio Amin Fathani, Yosef Satrio Aji, ARIEF SYAIFUDDIN");
+			System.out.println("Rio Amin Fathani, Yosef Satrio Aji, Arief Syaifuddin");
 			System.out.println("21120119130069, 21120119130097,21120119130105");
 			System.out.println();
 			break;
