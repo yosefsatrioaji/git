@@ -9,7 +9,7 @@ public class Tebak_Kata {
 		System.out.println("Sekarang adalah jam " + sdf.format(cal.getTime()) );
 		String restrart;
                 pendefinisi2 object = new pendefinisi2();
-		do 
+		do
 		{
 			String jawaban;
 			String retry;
@@ -26,7 +26,6 @@ public class Tebak_Kata {
 			case 1 :
 			object.soal("Aku biasanya besar warnanya abu-abu, siapakah aku?","gajah");
 			break;
-
 			case 2 :
 			object.soal("Aku adalah benda bundar yang biasa di jalanan, siapakah aku?","roda");
 			break;
@@ -34,25 +33,7 @@ public class Tebak_Kata {
 			object.soal("Dipasang di bawah tapi di baca ke atas, apakah itu?", "nike");
 			break;
 			case 4 :
-			System.out.println("Aku laki-laki tapi bisa hamil, siapakah aku?");
-			jawaban = in.next();
-			if(jawaban.equalsIgnoreCase("Kuda laut")){
-				System.out.println("JAWABAN ANDA BENAR");
-			}
-			else{
-				System.out.println("yah, jawaban anda salah, ingin coba lagi? Y untuk ya");
-				retry = in.next();
-				if (retry.equalsIgnoreCase("y")){
-					System.out.println("Aku adalah benda bundar yang biasa di jalanan, siapakah aku?");
-					jawaban = in.next();
-					if(jawaban.equalsIgnoreCase("kuda laut")){
-						System.out.println("JAWABAN ANDA BENAR");
-					}
-					else{
-						System.out.println("yah, jawaban anda salah, yang benar adalah kuda laut");
-					}
-				}
-			}
+            object.soal("Aku laki-laki tapi bisa hamil, siapakah aku?", "Kuda laut");
 			break;
 			case 5 :
 			System.out.println("Made by Kelompok 74 Shift 2");
@@ -64,12 +45,12 @@ public class Tebak_Kata {
 			System.out.println("Soal belum cukup banyak ya? :( tunggu update selanjutnya yaa :D");
 			break;
         }
-		System.out.println("Terimakasih sudah bermain! Apakah anda ingin bermain lagi? Y jika ya"); 
+		System.out.println("Terimakasih sudah bermain! Apakah anda ingin bermain lagi? Y jika ya");
 		restrart = in.next();
       }
 	  while(restrart.equalsIgnoreCase("Y"));
 
 
-	  System.out.println("Terimakasih sudah bermain!"); 
-    } 
+	  System.out.println("Terimakasih sudah bermain!");
+    }
 }
