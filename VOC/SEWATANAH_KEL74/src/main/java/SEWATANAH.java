@@ -1,20 +1,14 @@
-
-import java.text.SimpleDateFormat;
 import javax.swing.JOptionPane;
+import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 /**
  *
  * @author yosef
  */
 public class SEWATANAH extends javax.swing.JFrame {
-
+    TugasModul8 sewa = new TugasModul8();
     /**
      * Creates new form SEWATANAH
      */
@@ -47,6 +41,7 @@ public class SEWATANAH extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         Tabel = new javax.swing.JTable();
         Tempat = new javax.swing.JLabel();
+        Tanggal = new javax.swing.JLabel();
 
         javax.swing.GroupLayout jDialog1Layout = new javax.swing.GroupLayout(jDialog1.getContentPane());
         jDialog1.getContentPane().setLayout(jDialog1Layout);
@@ -111,6 +106,8 @@ public class SEWATANAH extends javax.swing.JFrame {
 
         Tempat.setText("Pilih Dulu");
 
+        Tanggal.setText("jLabel6");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -130,7 +127,10 @@ public class SEWATANAH extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(Tempat))
                             .addComponent(Nama, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(TanggalSewa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(TanggalSewa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(Tanggal))
                             .addComponent(jLabel3)
                             .addComponent(jLabel4)
                             .addComponent(jLabel5)
@@ -164,7 +164,9 @@ public class SEWATANAH extends javax.swing.JFrame {
                         .addGap(7, 7, 7)
                         .addComponent(jLabel3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(TanggalSewa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(TanggalSewa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Tanggal))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel5)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -185,13 +187,16 @@ public class SEWATANAH extends javax.swing.JFrame {
     private void ConfirmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ConfirmActionPerformed
             // TODO add your handling code here:
             Nama.setText(Nama.getText());
+            sewa.setNama(Nama.getText());
             Tempat.setText(ComboTempat.getSelectedItem().toString());
-            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");  
-            String date = sdf.format(TanggalSelesai.getDate());
-            
-            JOptionPane.showMessageDialog(null, "Tes", "SUCCESS"+Nama, HEIGHT);
+            sewa.setTempat(Tempat.getText());
+            String datesewa = ((JTextField)TanggalSewa.getDateEditor().getUiComponent()).getText();
+            sewa.setDate1(datesewa);
+            String dateselesai = ((JTextField)TanggalSelesai.getDateEditor().getUiComponent()).getText();
+            sewa.setDate2(dateselesai);
+            JOptionPane.showMessageDialog(null, "Tes", "SUCCESS", HEIGHT);
             DefaultTableModel model= (DefaultTableModel) Tabel.getModel();
-            //model.addRow(new Object[]{Nama.getText(),Tempat.getText(),Nama2.getText(),Nama3.getText(),Nim1.getText(),Nim2.getText(),Nim3.getText()});
+            model.addRow(new Object[]{sewa.getNama(),sewa.getTempat(),sewa.getDate1(),sewa.getDate2(),sewa.getNama()});
     }//GEN-LAST:event_ConfirmActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -238,6 +243,7 @@ public class SEWATANAH extends javax.swing.JFrame {
     private javax.swing.JButton Confirm;
     private javax.swing.JTextField Nama;
     private javax.swing.JTable Tabel;
+    private javax.swing.JLabel Tanggal;
     private com.toedter.calendar.JDateChooser TanggalSelesai;
     private com.toedter.calendar.JDateChooser TanggalSewa;
     private javax.swing.JLabel Tempat;

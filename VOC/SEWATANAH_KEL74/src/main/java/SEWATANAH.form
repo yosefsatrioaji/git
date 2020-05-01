@@ -72,7 +72,11 @@
                               <Component id="Tempat" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Component id="Nama" alignment="0" min="-2" pref="136" max="-2" attributes="0"/>
-                          <Component id="TanggalSewa" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="TanggalSewa" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="Tanggal" min="-2" max="-2" attributes="0"/>
+                          </Group>
                           <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -113,7 +117,10 @@
                       <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
                       <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="TanggalSewa" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="TanggalSewa" min="-2" max="-2" attributes="0"/>
+                          <Component id="Tanggal" min="-2" max="-2" attributes="0"/>
+                      </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
@@ -258,6 +265,11 @@
     <Component class="javax.swing.JLabel" name="Tempat">
       <Properties>
         <Property name="text" type="java.lang.String" value="Pilih Dulu"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Tanggal">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jLabel6"/>
       </Properties>
     </Component>
   </SubComponents>
